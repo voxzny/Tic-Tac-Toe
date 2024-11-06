@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f9;
+  }
+  .scoreboard {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    cursor: pointer;
+    user-select: none; /* Add space between score and game board */
+  }
+  .board {
+    display: grid;
+    grid-template-columns: repeat(3, 120px);
+    grid-template-rows: repeat(3, 120px);
+    gap: 10px;
+  }
+  .card {
+    width: 120px;
+    height: 120px;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    cursor: pointer;
+    user-select: none; /* Prevents text selection and caret appearance */
+    transition: transform 0.3s;
+  }
+  .card:hover {
+    transform: scale(1.1);
+  }
+  .card.animate {
+    animation: fadeInScale 0.3s ease-in-out;
+  }
+  .message {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .hidden {
+    display: none;
+  }
+  @keyframes fadeInScale {
+    0% {
+      opacity: 0;
+      transform: scale(0.5);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }

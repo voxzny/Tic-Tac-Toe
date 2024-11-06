@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Tic Tac Toe</title>
+  
+</head>
+<body>
+    <div class="scoreboard">
+        <div>X Score: <span id="scoreX">0</span></div>
+        <div>O Score: <span id="scoreO">0</span></div>
+      </div>
+  <div class="board">
+    <div class="card" onclick="toggleXO(this, 0)"></div>
+    <div class="card" onclick="toggleXO(this, 1)"></div>
+    <div class="card" onclick="toggleXO(this, 2)"></div>
+    <div class="card" onclick="toggleXO(this, 3)"></div>
+    <div class="card" onclick="toggleXO(this, 4)"></div>
+    <div class="card" onclick="toggleXO(this, 5)"></div>
+    <div class="card" onclick="toggleXO(this, 6)"></div>
+    <div class="card" onclick="toggleXO(this, 7)"></div>
+    <div class="card" onclick="toggleXO(this, 8)"></div>
+  </div>
+  
+  <div id="winMessage" class="message hidden">You Win!</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
